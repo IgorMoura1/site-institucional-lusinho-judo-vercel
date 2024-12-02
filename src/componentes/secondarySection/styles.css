@@ -9,6 +9,10 @@
     width: 100vw;
 }
 
+.title-secondary h1{
+    font-size: var(--h3);
+}
+
 .leftSection {
     display: flex;
     flex-direction: column;
@@ -30,12 +34,18 @@
     text-align: justify;
 }
 
-.images{
+.images-secondary{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     padding: 2rem;
+    gap: ;
+}
+
+.images-secondary img{
+    width: 280px;
+    height: 180px;
 }
 
 .hero {

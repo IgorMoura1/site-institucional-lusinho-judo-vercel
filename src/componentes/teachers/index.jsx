@@ -3,28 +3,29 @@ import Card from "../card";
 import "./styles.css";
 
 import Kevin from "./assets/kevin1.jpg";
-import Professor1 from "./assets/teacher.jpg";
-import Professor2 from "./assets/teacher.jpg";
+import Professor1 from "./assets/kevin1.jpg";
+import Professor2 from "./assets/teacher1.png";
+import Professor3 from "./assets/teacher2.png";
 
 export default function Teachers() {
     const teachers = [
         {
-            name: "João da Silva",
-            description: "Especialista em judô com mais de 10 anos de experiência.",
+            name: "Jhonatan Dionizio",
+            description: "Responsável pela parte de formação física dos atletas, com um foco inicial em adultos. Ele traz uma vasta experiência em condicionamento físico, ajudando os atletas a melhorar sua força, resistência e flexibilidade. Gustavo trabalha de perto com os judocas para garantir que estejam em excelente forma física.",
             photo: Professor1,
             appearance: "um homem de pele clara, cabelo curto e olhos castanhos",
         },
         {
             name: "Kevin Peters",
-            description: "Treinador nacional com foco em desenvolvimento juvenil.",
+            description: "Seu foco está na formação de atletas mirins, promovendo o desenvolvimento técnico e físico desde uma idade jovem. Kevin é conhecido por sua abordagem pedagógica, criando um ambiente de aprendizado divertido e disciplinado. Tendo como objetivo, tornar seus jovens alunos a serem campeões e cidadãos exemplares.",
             photo: Kevin,
-            appearance: "um homem jovem de pele clara, cabelo loiro e barba curta",
+            appearance: "um homem jovem de pele clara, cabelo castanho loiro, vestindo um kimono de judo olhando para frente",
         },
         {
-            name: "Eduardo Matos",
-            description: "Faixa preta 5º Dan e mentor de campeões estaduais.",
+            name: "Eduardo Prandini",
+            description: "Responsável pelo ensino de judô tanto para crianças quanto para adultos. Professor experiente, tendo conquistado diversas competições estaduais em sua carreira. Eduardo se dedica a transmitir os valores e técnicas do judô, ajudando seus alunos a alcançar seu pleno potencial tanto dentro quanto fora do tatame.",
             photo: Professor2,
-            appearance: "um homem de pele morena, cabelo raspado e expressão séria",
+            appearance: "um homem de pele morena, cabelo medio cacheado e está sorrindo",
         },
     ];
 

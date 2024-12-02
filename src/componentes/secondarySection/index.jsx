@@ -1,6 +1,6 @@
 import './styles.css';
-import fotoInstituto1 from './assets/placeholder.svg';
-import fotoInstituto2 from './assets/placeholder.svg';
+import fotoInstituto1 from './assets/instituto1img.png';
+import fotoInstituto2 from './assets/instituto2img.png';
 import logo from './assets/logo.svg';
 import judokas from './assets/judokas.svg';
 import { Container } from '@mui/material';
@@ -10,20 +10,20 @@ export default function SecondarySection() {
         <div className="container_section">
             <div className="leftSection">
                 <div className="text_institute">
-                    <div className="title">
-                        <h1>CALMA CALABRESO</h1>
+                    <div className="title-secondary">
+                        <h1>Instituto Sensei Luisinho</h1>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tristique quam volutpat ligula viverra auctor. Aliquam ultrices nulla eros, quis rutrum urna fringilla sed. Nulla sodales tellus sed est condimentum, id finibus eros tempus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent a diam vitae ipsum tristique sodales vitae a urna. Aliquam justo purus, lobortis lobortis risus sed, tincidunt porttitor magna.</p>
-                    <p>Phasellu massa ipsum, feugiat non neque nec, accumsan porta dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ut ex rhoncus ipsum efficitur suscipit ut eu metus. Morbi sagittis, tellus ut finibus semper, arcu quam commodo lectus, nec sodales ligula felis quis libero. Maecenas porttitor, felis et viverra lobortis, leo eros fringilla est, nec mattis dolor nunc quis nibh.</p>
+                    <p>Com mais de uma década de dedicação e impacto na comunidade, o Instituto Sensei Luisinho é um espaço onde o judô vai além do esporte e se transforma em uma ferramenta de educação, disciplina e inclusão. Localizado na Av. dos Metalúrgicos, 2255 - Cidade Tiradentes, dentro do Centro de Esportes e Lazer André Vital Ribeiro Soares (CE Tiradentes), o instituto já foi lar de aprendizado para mais de 200 alunos ao longo dos anos, sendo que atualmente cerca de 70 praticantes estão ativos. Acessível para todos, o instituto oferece aulas totalmente gratuitas, abraçando pessoas de todas as idades e promovendo o esporte como um direito e não como um privilégio. Para atender a diferentes necessidades, as aulas são realizadas em três períodos, manhã, tarde e noite, possibilitando a flexibilidade necessária para quem quer aprender e crescer no esporte.</p>
+                    <p>Além do renomado Sensei Luisinho, o instituto conta com uma equipe dedicada formada por mais 5 professores e 2 monitores, que juntos garantem a qualidade e o cuidado nas práticas e no desenvolvimento dos alunos. O Instituto Sensei Luisinho não é apenas um lugar para aprender judô, mas um verdadeiro pilar na comunidade, incentivando valores como respeito, perseverança e espírito de equipe. Venha conhecer, praticar e se inspirar! 🥋.</p>
                 </div>
-                <div className="images">
-                    <img src={fotoInstituto1} alt="" />
-                    <img src={fotoInstituto2} alt="" />
+                <div className="images-secondary">
+                    <img src={fotoInstituto1} alt="Crianças praticando Judô num tatami azul, na instituição Luisinho Judo" />
+                    <img src={fotoInstituto2} alt="Alunos e convidados posam para uma foto na instituição Luisinho Judo" />
                 </div>
             </div>
             <div className="hero">
-                <img src={logo} alt="" />
-                <img src={judokas} alt="" />
+                <img src={logo} alt="Logo da Instituição Luisinho" />
+                <img src={judokas} alt="Dois judokas estão a frente do logo da instituição, eles estão lutando" />
             </div>
         </div>
     )
