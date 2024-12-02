@@ -4,6 +4,9 @@ import lutasHeroImage from './assets/lutas.svg';
 import CardEssence from './cardEssence';
 import CardHistory from './cardHistory';
 import './styles.css';
+import kanoImg from './assets/kano.png';
+import kawaguchiImg from './assets/kawaguchi.png';
+import olimpiadasImg from './assets/olimpiadas.png';
 
 const essential = [
     { numero: '1.', titulo: 'Cortesia', text: 'Para ser educado no trato com os outros.' },
@@ -17,9 +20,9 @@ const essential = [
 ];
 
 const history = [
-    { image: '/src/componentes/bannerLutas/assets/kano.png', titulo: 'Jigoro Kano', text: 'Criador do Judô.' },
-    { image: '/src/componentes/bannerLutas/assets/kawaguchi.png', titulo: 'Takao Kawaguchi', text: 'Medalhista de Judô em 1972.' },
-    { image: '/src/componentes/bannerLutas/assets/olimpiadas.png', titulo: 'Paralimpíadas ', text: 'Disputada em Tokyo, 2020.' },
+    { image: kanoImg, titulo: 'Jigoro Kano', text: 'Criador do Judô.' },
+    { image: kawaguchiImg, titulo: 'Takao Kawaguchi', text: 'Medalhista de Judô em 1972.' },
+    { image: olimpiadasImg, titulo: 'Paralimpíadas ', text: 'Disputada em Tokyo, 2020.' },
 ];
 
 export default function LutasHero() {
