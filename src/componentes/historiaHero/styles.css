@@ -18,8 +18,9 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
     padding-top: 110px;
     box-sizing: border-box;
 }
@@ -30,21 +31,23 @@
     flex-direction: column;
     font-family: var(--fonteWork);
     color: var(--branco-texto);
-    margin-top: 98px;
-    margin-left: 98px;
-    margin-right: 98px;
+    margin: auto;
+    padding: 2%;
     gap: 40px;
+    max-width: 1200px;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
 }
 
 .texto_historia_judo h1 {
     font-family: var(--fonteWork);
     color: var(--branco-texto);
-    font-size: var(--h1);
+    font-size: clamp(2rem, 5vw, 4rem);
 
 }
 
 .texto_paragrafo h4{
-    font-size: var(--h4);
+    font-size: clamp(1rem, 3vw, 1.5rem);
     font-weight: 400;
 }
 

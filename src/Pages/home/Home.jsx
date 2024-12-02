@@ -16,7 +16,7 @@ export default function Home() {
       </div>
       <div className='fullContainerPage'>
         <Hero />
-        <SecondarySection />
+        <SecondarySection id="secondary-section" />
         <AboutLuis />
         <Teachers />
         <NowParticipate />

@@ -17,17 +17,17 @@
     padding: 0 16px;
 }
 
-.text{
+.text_institute{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0 2rem;
+    font-size: var(--bodyMedium);
     font-family: var(--fonteWork);
     color: var(--branco-texto);
     gap: 20px;
     text-align: justify;
-    color: var(--branco-texto);
 }
 
 .images{

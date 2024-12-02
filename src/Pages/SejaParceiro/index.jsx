@@ -9,13 +9,14 @@ import Header from '../../componentes/head';
 import './styles.css';
 import Footer from '../../componentes/footer';
 
-
 const ContactComponent = () => {
   return (
     <div className="background">
-      <Box marginTop={"70px"} display="flex" justifyContent="center" padding={8} >
-        <Header title="Seja um parceiro"/>
-        <Grid container spacing={4} maxWidth="md" >
+      <Box width="100%">
+        <Header title="Seja um parceiro" />
+      </Box>
+      <Box marginTop={"70px"} display="flex" justifyContent="center" padding={8}>
+        <Grid container spacing={4} maxWidth="md">
           <Grid item xs={12} md={5}>
             <Box bgcolor="white" p={3} borderRadius={2}>
               <Typography variant="h6" color="black" fontWeight="bold">
@@ -75,7 +76,6 @@ const ContactComponent = () => {
             </Box>
           </Grid>
         </Grid>
-
       </Box>
       <Footer />
     </div>

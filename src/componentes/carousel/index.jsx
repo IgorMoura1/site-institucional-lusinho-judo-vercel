@@ -23,7 +23,7 @@ const Carousel = () => {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 600,
+        speed: 600, 
         slidesToShow: 3,
         slidesToScroll: 1,
         centerMode: true,
@@ -33,21 +33,10 @@ const Carousel = () => {
     };
 
     return (
-        <div className="carousel-container"
-            role="region"
-            aria-labelledby="carousel-title">
-            <Slider
-                ref={sliderRef}
-                {...settings}
-                aria-live="polite"
-            >
+        <div className="carousel-container">
+            <Slider ref={sliderRef} {...settings}>
                 {items.map((item, index) => (
-                    <div
-                        key={index}
-                        className={`carousel-item ${index === activeIndex ? 'active' : 'sideActive'}`}
-                        role="listitem"
-                        aria-hidden={index !== activeIndex}
-                    >
+                    <div key={index} className={`carousel-item ${index === activeIndex ? 'active' : 'sideActive'}`}>
                         <div className="carousel-item-wrapper">
                             <h2>{item.title}</h2>
                             <img src={item.image} alt={item.title} className="carousel-image" />
@@ -56,21 +45,9 @@ const Carousel = () => {
                     </div>
                 ))}
             </Slider>
-            <div className="carousel-navigation">
-                <button
-                    className="nav-button left"
-                    onClick={() => sliderRef.current.slickPrev()}
-                    aria-label="Slide anterior"
-                    tabIndex="0"
-                >
-                </button>
-                <button
-                    className="nav-button right"
-                    onClick={() => sliderRef.current.slickNext()}
-                    aria-label="Próximo slide"
-                    tabIndex="0"
-                >
-                </button>
+            <div className="carousel-navigation"> 
+                <button className="nav-button left" onClick={() => sliderRef.current.slickPrev()}></button>
+                <button className="nav-button right" onClick={() => sliderRef.current.slickNext()}></button>
             </div>
         </div>
     );

@@ -31,20 +31,7 @@ export default function Header() {
         };
     }, []);
 
-    const navigateHome = useNavigate();
-    function home() {
-        navigateHome("/");
-    }
-
-    const navigateHistoria = useNavigate();
-    function historia() {
-        navigateHistoria("/historia-judo");
-    }
-
-    const navigateSejaParceiro = useNavigate();
-    function sejaparceiro() {
-        navigateSejaParceiro("/seja-parceiro");
-    }
+    const navigate = useNavigate();
 
     return (
         <header className="header top" role="banner">
@@ -56,9 +43,9 @@ export default function Header() {
                 role="navigation"
                 aria-label="Menu principal"
             >
-                <a href="#" onClick={home} aria-label="Sobre o Instituto">O Instituto</a>
-                <a href="#" onClick={historia} aria-label="História do Judô">História</a>
-                <a href="#" onClick={sejaparceiro} aria-label="Fale conosco">Fale Conosco</a>
+                <a href="#" onClick={() => navigate("/")} aria-label="Sobre o Instituto">O Instituto</a>
+                <a href="#" onClick={() => navigate("/historia-judo")} aria-label="História do Judô">História</a>
+                <a href="#" onClick={() => navigate("/seja-parceiro")} aria-label="Fale conosco">Fale Conosco</a>
             </nav>
         </header>
     );

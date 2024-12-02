@@ -1,15 +1,22 @@
 import "./styles.css";
-import TeacherImage from "../card/assets/teacher.jpg";
 
-export default function Card() {
+export default function Card({ name, description, photo, appearance }) {
     return (
-        <div className="card">
+        <div
+            className="card"
+            role="region"
+            aria-labelledby={`card-title-${name}`}
+            aria-describedby={`card-description-${name}`}
+        >
             <div className="card-content">
-                <div className="card-photo">
-                    <img src={TeacherImage} alt="" />
+                <div className="card-photo" role="img" aria-label={`Foto do professor ${name}, ${appearance}`}>
+                    <img src={photo} alt={`Professor ${name}, ${appearance}`} />
                 </div>
-                <p className="card-text">
-                    Informações sobre o professor
+                <p id={`card-title-${name}`} className="card-title">
+                    {name}
+                </p>
+                <p id={`card-description-${name}`} className="card-description">
+                    {description}
                 </p>
             </div>
         </div>

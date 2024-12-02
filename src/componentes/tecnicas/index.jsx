@@ -34,34 +34,18 @@ const Techniques = () => {
   ];
 
   return (
-    <div className="techniques-container">
+    <div className="techniques-container" aria-labelledby="techniques-title">
+      <h1 id="techniques-title">Judo Techniques</h1>
       <div className="techniques-wrapper">
-        <div className="category">
+        <div className="category" aria-labelledby="nage-waza-title">
           <div className="title-category">
-            <h2>NAGE-WAZA</h2>
-            <div className="japanese-title">
+            <h2 id="nage-waza-title">NAGE-WAZA</h2>
+            <div className="japanese-title" aria-hidden="true">
               <span>投げ技</span>
             </div>
           </div>
           <span>Técnicas de Projeção</span>
           <div className="techniques-layout">
-            <div className="techniquesGroup">
-              <div className="technique">
-                <h4>te<br />-<br />waza</h4>
-                <span>手<br />
-                  技</span>
-              </div>
-              <div className="technique">
-                <h4>koshi<br />-<br />waza</h4>
-                <span>腰<br />
-                  技</span>
-              </div>
-              <div className="technique">
-                <h4>ashi<br />-<br />waza</h4>
-                <span>足<br />
-                  技</span>
-              </div>
-            </div>
             <div className="techniques-list">
               {nageWazaTechniques.map((technique, index) => (
                 <TechniqueCard
@@ -69,39 +53,22 @@ const Techniques = () => {
                   name={technique.name}
                   imageSrc={technique.imageSrc}
                   japaneseLetters={technique.japaneseLetters}
+                  description={technique.description}
                 />
               ))}
             </div>
           </div>
         </div>
-        <div className="category">
+
+        <div className="category" aria-labelledby="katame-waza-title">
           <div className="title-category">
-            <h2>KATAME-WAZA</h2>
-            <div className="japanese-title">
+            <h2 id="katame-waza-title">KATAME-WAZA</h2>
+            <div className="japanese-title" aria-hidden="true">
               <span>固め技</span>
             </div>
           </div>
           <span>Técnicas de Solo</span>
           <div className="techniques-layout">
-            <div className="techniquesGroup">
-              <div className="technique">
-                <h4>osaekomi
-                  <br />-<br />waza</h4>
-                <span>押込<br />
-                  技</span>
-              </div>
-              <div className="technique">
-                <h4>shime<br />-<br />waza</h4>
-                <span>絞
-                  <br />
-                  技</span>
-              </div>
-              <div className="technique">
-                <h4>kansetsu<br />-<br />waza</h4>
-                <span>関節<br />
-                  技</span>
-              </div>
-            </div>
             <div className="techniques-list">
               {katameWazaTechniques.map((technique, index) => (
                 <TechniqueCard
@@ -109,6 +76,7 @@ const Techniques = () => {
                   name={technique.name}
                   imageSrc={technique.imageSrc}
                   japaneseLetters={technique.japaneseLetters}
+                  description={technique.description}
                 />
               ))}
             </div>
