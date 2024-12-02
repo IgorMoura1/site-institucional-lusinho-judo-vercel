@@ -21,7 +21,7 @@ import kataGatameImg from './assets/katame_waza/osaekomi-waza/kata-gatame.png';
 import kuzureKamiShihoGatameImg from './assets/katame_waza/osaekomi-waza/kuzure-kami-shiho-gatame.png';
 import tateShihoGatameImg from './assets/katame_waza/osaekomi-waza/tate-shiho-gatame-min.png';
 import doJimeImg from './assets/katame_waza/shime-waza/do-jime.png';
-import gyakuJujiJimeImg from './assets/katame_waza/shime-waza/gyaku-juji-jime.png';
+import gyakuJujiJimeImg from './assets/katame_waza/shime-waza/gyaku-Juji-jime.png';
 import ryoTeJimeImg from './assets/katame_waza/shime-waza/ryo-te-jime.png';
 import tsukkomiJimeImg from './assets/katame_waza/shime-waza/tsukkomi-jime.png';
 import ashiGaramiImg from './assets/katame_waza/kansetsu-waza/ashi-garami.png';
