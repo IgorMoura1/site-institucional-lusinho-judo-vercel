@@ -5,7 +5,7 @@ import './styles.css';
 
 export default function TecnicaHero() {
     return (
-        <Container
+        <div
             component="main"
             className="container_tecniqueHero"
             role="region"
@@ -37,6 +37,6 @@ export default function TecnicaHero() {
                 </Typography>
                 <Tecnicas />
             </section>
-        </Container>
+        </div>
     );
 }
