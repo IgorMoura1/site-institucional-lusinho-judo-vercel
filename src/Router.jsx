@@ -3,7 +3,7 @@ import Home from "./Pages/home/Home";
 import SejaParceiro from "./Pages/SejaParceiro";
 import HistoriaJudo from './Pages/historia'
 
-export default function Rotas() {
+export default function Router() {
   return (
     <>
       <BrowserRouter>
