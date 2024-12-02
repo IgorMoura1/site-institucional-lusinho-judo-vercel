@@ -62,7 +62,6 @@ const Techniques = () => {
 
   return (
     <div className="techniques-container" aria-labelledby="techniques-title">
-      <h1 id="techniques-title">Judo Techniques</h1>
       <div className="techniques-wrapper">
         <div className="category" aria-labelledby="nage-waza-title">
           <div className="title-category">

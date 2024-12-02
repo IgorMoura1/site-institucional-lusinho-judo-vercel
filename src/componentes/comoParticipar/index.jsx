@@ -18,42 +18,18 @@ const mockAddresses = [
     },
     {
         label: "Av. Nações Unidas, 2255 - Vila Alpina",
-        coordinates: { lat: -23.642034, lng: -46.605381 },
+        coordinates: { lat: -23.610529, lng: -46.6971812 },
         name: "Unidade Vila Alpina",
     },
     {
-        label: "Rua Silas Malafaria, 330 - Jardins",
-        coordinates: { lat: -23.650294, lng: -46.656391 },
-        name: "Unidade Jardins",
-    },
-    {
-        label: "Av. dos Metalúrgicos, 2255 - Cidade Tiradentes",
-        coordinates: { lat: -23.598728, lng: -46.402455 },
-        name: "Unidade Cidade Tiradentes",
-    },
-    {
-        label: "R. Argemiro Sátiro, 330 - Osasco, SP",
-        coordinates: { lat: -23.551019, lng: -46.8175317 },
-        name: "Unidade Osasco",
-    },
-    {
-        label: "Av. Nações Unidas, 2255 - Vila Alpina",
-        coordinates: { lat: -23.642034, lng: -46.605381 },
-        name: "Unidade Vila Alpina",
-    },
-    {
-        label: "Rua Silas Malafaria, 330 - Jardins",
-        coordinates: { lat: -23.650294, lng: -46.656391 },
-        name: "Unidade Jardins",
-    }, {
-        label: "Av. dos Metalúrgicos, 2255 - Cidade Tiradentes",
-        coordinates: { lat: -23.598728, lng: -46.402455 },
-        name: "Unidade Cidade Tiradentes",
+        label: "R. José Dias da Costa, 39 - Paraisopolis",
+        coordinates: { lat: -23.609706, lng: -46.726092 },
+        name: "Unidade Paraisopolis",
     },
 ];
 
 export default function ComoParticipar() {
-    const [selectedAddress, setSelectedAddress] = useState(null);
+    const [selectedAddress, setSelectedAddress] = useState(mockAddresses[0]);
 
     return (
         <Box
