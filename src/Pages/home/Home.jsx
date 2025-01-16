@@ -10,6 +10,7 @@ import NowParticipate from "../../componentes/comoParticipar";
 // mobile imports
 import MobileHeader from "../../componentes/mobile/headerMobile";
 import HeroMobile from "../../componentes/mobile/heroMobile";
+import InstituteMobile from "../../componentes/mobile/instituteMobile";
 import "../home/Home.module.css";
 
 export default function Home() {
@@ -35,7 +36,7 @@ export default function Home() {
       </div>
       <div className="fullContainerPage">
         {isMobile ? <HeroMobile /> : <Hero />}
-        <SecondarySection id="secondary-section" />
+        {isMobile ? <InstituteMobile /> : <SecondarySection id="secondary-section" />}
         <AboutLuis />
         <Teachers />
         <NowParticipate />

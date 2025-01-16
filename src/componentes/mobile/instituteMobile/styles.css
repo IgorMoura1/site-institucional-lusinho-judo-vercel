@@ -1,0 +1,92 @@
+.container_section{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.logoInstitute{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+.logoInstitute img{
+    width: 200px;
+    height: 200px;
+}
+
+.titleInstitute {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+}
+
+.titleInstitute h1 {
+    font-size: 30px;
+    color: var(--branco);
+    font-family: var(--fonteWork);
+}
+
+.instituteWord {
+    display: block;
+}
+
+.textInstitute{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    margin-top: 10px;
+    font-family: var(--fonteWork);
+    font-size: 10px;
+    color: var(--branco);
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.photoInstitute{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainPhoto {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mainPhoto img {
+    width: 100%;
+    max-width: 430px;
+    height: auto;
+}
+
+.secondaryPhotos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.secondaryPhotos img{
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+}
