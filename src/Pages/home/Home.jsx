@@ -11,6 +11,7 @@ import NowParticipate from "../../componentes/comoParticipar";
 import MobileHeader from "../../componentes/mobile/headerMobile";
 import HeroMobile from "../../componentes/mobile/heroMobile";
 import InstituteMobile from "../../componentes/mobile/instituteMobile";
+import SobreLuisMobile from "../../componentes/mobile/aboutLuisMobile";
 import "../home/Home.module.css";
 
 export default function Home() {
@@ -36,8 +37,8 @@ export default function Home() {
       </div>
       <div className="fullContainerPage">
         {isMobile ? <HeroMobile /> : <Hero />}
-        {isMobile ? <InstituteMobile /> : <SecondarySection id="secondary-section" />}
-        <AboutLuis />
+        {isMobile ? <InstituteMobile /> : <SecondarySection id="secondary-section" />} 
+        {isMobile ? <SobreLuisMobile /> : <AboutLuis />}
         <Teachers />
         <NowParticipate />
         <Footer />
