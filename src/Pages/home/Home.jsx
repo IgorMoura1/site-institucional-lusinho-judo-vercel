@@ -12,6 +12,7 @@ import MobileHeader from "../../componentes/mobile/headerMobile";
 import HeroMobile from "../../componentes/mobile/heroMobile";
 import InstituteMobile from "../../componentes/mobile/instituteMobile";
 import SobreLuisMobile from "../../componentes/mobile/aboutLuisMobile";
+import ProfessoresMobile from "../../componentes/mobile/professoresMobile";
 import "../home/Home.module.css";
 
 export default function Home() {
@@ -39,7 +40,7 @@ export default function Home() {
         {isMobile ? <HeroMobile /> : <Hero />}
         {isMobile ? <InstituteMobile /> : <SecondarySection id="secondary-section" />} 
         {isMobile ? <SobreLuisMobile /> : <AboutLuis />}
-        <Teachers />
+        {isMobile ? <ProfessoresMobile /> : <Teachers />}
         <NowParticipate />
         <Footer />
       </div>
