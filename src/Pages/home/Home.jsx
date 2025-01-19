@@ -5,7 +5,7 @@ import SecondarySection from "../../componentes/secondarySection";
 import Footer from "../../componentes/footer";
 import AboutLuis from "../../componentes/aboutLuis";
 import Teachers from "../../componentes/teachers";
-import NowParticipate from "../../componentes/comoParticipar";
+import HowParticipate from "../../componentes/comoParticipar";
 
 // mobile imports
 import MobileHeader from "../../componentes/mobile/headerMobile";
@@ -13,6 +13,7 @@ import HeroMobile from "../../componentes/mobile/heroMobile";
 import InstituteMobile from "../../componentes/mobile/instituteMobile";
 import SobreLuisMobile from "../../componentes/mobile/aboutLuisMobile";
 import ProfessoresMobile from "../../componentes/mobile/professoresMobile";
+import HowParticipateMobile from "../../componentes/mobile/comoParticiparMobile";
 import "../home/Home.module.css";
 
 export default function Home() {
@@ -41,7 +42,7 @@ export default function Home() {
         {isMobile ? <InstituteMobile /> : <SecondarySection id="secondary-section" />} 
         {isMobile ? <SobreLuisMobile /> : <AboutLuis />}
         {isMobile ? <ProfessoresMobile /> : <Teachers />}
-        <NowParticipate />
+        {isMobile ? <HowParticipateMobile /> : <HowParticipate />}
         <Footer />
       </div>
     </>

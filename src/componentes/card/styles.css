@@ -22,8 +22,8 @@
     background-color: #FFF;
     position: relative;
     z-index: 2; 
-    left: -5px; /* Offset to the left */
-    top: -5px; /* Offset upwards */
+    left: -5px;
+    top: -5px;
     height: 500px;
 }
 
