@@ -35,6 +35,7 @@ export default function Teachers() {
             <div className="contentTeacher">
                 <h1>PROFESSORES:</h1>
                 <AwesomeSlider>
+                    
                     {teachers.map((teacher, index) => (
                         <div key={index} className="carouselItem">
                             <Card

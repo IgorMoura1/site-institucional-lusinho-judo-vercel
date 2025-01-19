@@ -1,3 +1,4 @@
+import React from "react";
 import "./styles.css";
 
 export default function Card({ name, description, photo, appearance }) {
@@ -8,6 +9,7 @@ export default function Card({ name, description, photo, appearance }) {
             aria-labelledby={`card-title-${name}`}
             aria-describedby={`card-description-${name}`}
         >
+            <div className="card-back"></div> {/* Empty div for the background */}
             <div className="card-content">
                 <div className="card-photo" role="img" aria-label={`Foto do professor ${name}, ${appearance}`}>
                     <img src={photo} alt={`Professor ${name}, ${appearance}`} />

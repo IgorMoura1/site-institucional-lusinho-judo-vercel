@@ -6,30 +6,44 @@
 
 .card {
     width: 100%;
-    max-width: 400px;
-    background-color: var(--branco);
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
-    overflow: hidden;
+    max-width: 300px;
+    position: relative;
+    background-color: transparent;
+    overflow: visible;
     display: flex;
     flex-direction: column;
     outline: none;
 }
 
-.card:focus-within {
-    border: 2px solid var(--azul-claro);
-}
-
 .card-content {
     display: flex;
     flex-direction: column;
-    border-radius: 12px;
     text-align: center;
+    background-color: #FFF;
+    position: relative;
+    z-index: 2; 
+    left: -5px; /* Offset to the left */
+    top: -5px; /* Offset upwards */
+    height: 500px;
+}
+
+.card-back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--preto);
+    padding: 0px 8px 8px 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
 }
 
 .card-photo {
     width: 100%;
-    aspect-ratio: 4 / 3;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -39,9 +53,8 @@
 
 .card-photo img {
     width: 100%;
-    height: 100%;
+    height: 300px;
     object-fit: cover;
-    border-radius: 12px 12px 0 0;
 }
 
 .card-title {
@@ -51,14 +64,19 @@
     padding: 16px;
     line-height: 1.5;
     font-weight: 600;
+    justify-content: start;
+    text-align: start;
 }
 
-.card-description{
+.card-description {
     font-family: var(--fonteWork);
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     color: var(--texto-escuro);
     padding: 0 16px 16px;
     line-height: 1.5;
+    text-align: justify;
+    flex-grow: 1;
+    height: 160px;
 }
 
 @media (max-width: 768px) {
