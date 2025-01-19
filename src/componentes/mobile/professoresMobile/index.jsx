@@ -1,7 +1,7 @@
 import React from "react";
-import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Card from "../../card";
+import AwesomeSlider from 'react-awesome-slider';
+import 'react-awesome-slider/dist/styles.css';
 import "./styles.css";
 
 import Professor1 from "./assets/kevin1.jpg";
@@ -34,7 +34,7 @@ export default function Teachers() {
         <div className="backgroundTeachers">
             <div className="contentTeacher">
                 <h1>PROFESSORES:</h1>
-                <Carousel showThumbs={false} infiniteLoop useKeyboardArrows autoPlay>
+                <AwesomeSlider>
                     {teachers.map((teacher, index) => (
                         <div key={index} className="carouselItem">
                             <Card
@@ -45,7 +45,7 @@ export default function Teachers() {
                             />
                         </div>
                     ))}
-                </Carousel>
+                </AwesomeSlider>
             </div>
         </div>
     );
