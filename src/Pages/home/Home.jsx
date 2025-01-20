@@ -14,6 +14,7 @@ import InstituteMobile from "../../componentes/mobile/instituteMobile";
 import SobreLuisMobile from "../../componentes/mobile/aboutLuisMobile";
 import ProfessoresMobile from "../../componentes/mobile/professoresMobile";
 import HowParticipateMobile from "../../componentes/mobile/comoParticiparMobile";
+import FooterMobile from "../../componentes/mobile/footerMobile";
 import "../home/Home.module.css";
 
 export default function Home() {
@@ -43,7 +44,7 @@ export default function Home() {
         {isMobile ? <SobreLuisMobile /> : <AboutLuis />}
         {isMobile ? <ProfessoresMobile /> : <Teachers />}
         {isMobile ? <HowParticipateMobile /> : <HowParticipate />}
-        <Footer />
+        {isMobile ? <FooterMobile/> : <Footer />}
       </div>
     </>
   );
