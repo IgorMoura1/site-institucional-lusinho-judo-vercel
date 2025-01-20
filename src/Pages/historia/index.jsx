@@ -9,6 +9,7 @@ import Footer from '../../componentes/footer'
 // mobile imports
 import HeaderMobile from '../../componentes/mobile/headerMobile'
 import HistoriaHeroMobile from '../../componentes/mobile/historiaHeroMobile'
+import TecnicasMobile from '../../componentes/mobile/bannerTecnicasMobile'
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -30,7 +31,7 @@ export default function Home() {
     <>
       {isMobile ? <HeaderMobile /> : <Header />}
       {isMobile ? <HistoriaHeroMobile/> : <HistoriaHero />}
-      <Tecnicas />
+      {isMobile ? <TecnicasMobile/> : <Tecnicas /> }
       <Faixas />
       <Lutas />
       <Footer />
