@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonteWork);
+}
+
+.historiaHeroMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.imgHerohistoriaMobile {
+    background-image: url(assets/judoHistory.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding-top: 110px;
+    box-sizing: border-box;
+}
+
+.textoHistoriaJudoMobile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: var(--fonteWork);
+    color: var(--branco-texto);
+    margin: auto;
+    padding: 0px 30px 0px 30px;
+    max-width: 1200px;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+}
+
+.textoHistoriaJudoMobile h1 {
+    font-family: var(--fonteWork);
+    font-size: var(--h3);
+    color: var(--branco-texto);
+}
+
+.textoParagrafoHistoriaMobile h4{
+    font-size: var(--bodyLarge);
+    font-weight: 500;
+}
+
+.textoParagrafoHistoriaMobile span {
+    font-size: var(--bodyMedium);
+    font-weight: 300;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.paragrafos_historia_judo{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.textoParagrafoHistoriaMobile{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 20px;
+}
