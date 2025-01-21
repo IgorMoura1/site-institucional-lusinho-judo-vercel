@@ -38,13 +38,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 50px;
 }
 
-.mobile-nav ul li {
+.mobile-nav ul {
     margin: 20px 0;
 }
 
-.mobile-nav ul li a {
+.mobile-nav ul a {
     text-decoration: none;
     color: var(--branco-texto);
     font-size: 24px;
@@ -52,10 +53,10 @@
     transition: color 0.5s ease, transform 0.4s ease;
 }
 
-.mobile-nav ul li a:active {
+.mobile-nav ul a:active {
     transform: scale(1.4);
 }
 
-.mobile-nav ul li a:hover {
+.mobile-nav ul a:hover {
     color: var(--branco);
 }
