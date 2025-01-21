@@ -1,14 +1,18 @@
 .techniquesMobile {
     text-align: center;
-    margin: 20px;
     color: white;
     width: 100%;
+    padding: 0px;
 }
 
 .techniquesWrapperMobile {
     display: flex;
     justify-content: space-evenly;
     width: auto;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
 }
 
 .categoryMobile {
@@ -21,8 +25,6 @@
     gap: 10px;
     flex-wrap: wrap;
 }
-
-
 
 .categoryMobile h2 {
     font-size: var(--h2);
@@ -38,12 +40,24 @@
     z-index: 2;
 }
 
+.titleCategoryMobile h2 {
+    font-size: 20px;
+    font-family: var(--fonteWork);
+    text-transform: uppercase;
+}
+
+.subTitleCategoryMobile span {
+    font-family: var(--fonteWork);
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
 .title h2 {
     position: relative;
     z-index: 3;
 }
 
-.japanese-title {
+.japaneseTitleMobile {
     position: absolute;
     z-index: 1;
     display: flex;
@@ -54,84 +68,60 @@
     margin: 10px;
 }
 
-.japanese-title span {
-    font-size: 80px;
+.japaneseTitleMobile span {
+    font-size: 40px;
     font-weight: bold;
     color: transparent;
     -webkit-text-stroke: 0.5px rgb(255, 255, 255);
-    text-stroke: 2px black;
     z-index: 0;
     font-family: var(--fonteLato);
+    opacity: 0.5;
 }
 
-.techniques-layout {
+.techniquesLayoutMobile {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    align-items: flex-start;
+    align-items: center;
 }
 
-.techniques-list {
+.techniquesListMobile {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 460px;
+    width: auto;
 }
 
-.technique-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-    width: calc(25% - 20px);
-    font-family: var(--fonteWork);
-    position: relative;
-    box-sizing: border-box;
-}
-
-.japanese-letters {
+.japaneseLettersMobile {
     position: absolute;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     color: transparent;
     -webkit-text-stroke: 0.5px rgb(255, 255, 255);
-    text-stroke: 2px black;
     z-index: 0;
     font-family: var(--fonteLato);
-    
+    -webkit-text-stroke: 0.4px rgb(255, 255, 255);
 }
 
 .technique-image {
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
     object-fit: contain;
     z-index: 1;
     position: relative;
 }
 
-.technique-card span {
+.techniqueCardMobile span {
     text-align: center;
     margin-top: 5px;
     font-family: var(--fonteWork);
     font-size: 10px;
     font-weight: 200;
-    
 }
 
-.heroCardTechnique {
+.heroCardTechniqueMobile {
     width: 100px;
     height: 75px;
     display: flex;
     justify-content: center;
-}
-
-.japanese-title span {
-    font-size: 80px;
-    font-weight: bold;
-    color: transparent;
-    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
-    text-stroke: 2px black;
-    opacity: 0.5;
 }
 
 .techniquesGroup {
@@ -152,7 +142,7 @@
     position: relative;
     z-index: 2;
     font-size: var(--bodyLarge);
-    color: white;
+    color: rgb(114, 0, 0);
     font-family: var(--fonteWork);
     font-weight: 200;
     text-align: center;
@@ -165,13 +155,13 @@
     font-weight: bold;
     color: transparent;
     -webkit-text-stroke: 0.5px rgb(255, 255, 255);
-    text-stroke: 1px black;
+    -webkit-text-stroke: 1px black;
     font-family: var(--fonteLato);
     top: 0;
     opacity: 0.5;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     width: 100%;
     height: 100%;
 }

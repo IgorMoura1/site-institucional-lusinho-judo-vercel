@@ -8,9 +8,9 @@ interface TechniqueCardProps {
 
 const TechniqueCard: React.FC<TechniqueCardProps> = ({ name, imageSrc, japaneseLetters }) => {
     return (
-        <div className="technique-card">
-            <div className="heroCardTechnique">
-                <div className="japanese-letters">{japaneseLetters}</div>
+        <div className="techniqueCardMobile">
+            <div className="heroCardTechniqueMobile">
+                <div className="japaneseLettersMobile">{japaneseLetters}</div>
                 <img src={imageSrc} alt={name} className="technique-image" />
             </div>
             <span>{name}</span>

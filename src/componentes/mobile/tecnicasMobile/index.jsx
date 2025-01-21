@@ -56,8 +56,8 @@ const Techniques = () => {
     { name: 'Tsukkomi-Jime', imageSrc: tsukkomiJimeImg, japaneseLetters: '突込絞' },
     { name: 'Ashi-Garami', imageSrc: ashiGaramiImg, japaneseLetters: '足緘' },
     { name: 'Ude-Garami', imageSrc: udeGaramiImg, japaneseLetters: '腕緘' },
-    { name: 'Ude-Hishigi-Sankaku-Gatame', imageSrc: udeHishigiSankakuGatameImg, japaneseLetters: '腕挫三角固' },
-    { name: 'Ude-Hishigi-Waki-Gatame', imageSrc: udeHishigiWakiGatameImg, japaneseLetters: '腕挫腋固' },
+    { name: 'Sankaku-Gatame', imageSrc: udeHishigiSankakuGatameImg, japaneseLetters: '腕挫三角固' },
+    { name: 'Waki-Gatame', imageSrc: udeHishigiWakiGatameImg, japaneseLetters: '腕挫腋固' },
   ];
 
   return (
@@ -66,13 +66,15 @@ const Techniques = () => {
         <div className="categoryMobile" aria-labelledby="nage-waza-title">
           <div className="titleCategoryMobile">
             <h2 id="nage-waza-title">NAGE-WAZA</h2>
-            <div className="japanese-title" aria-hidden="true">
+            <div className="japaneseTitleMobile" aria-hidden="true">
               <span>投げ技</span>
             </div>
           </div>
-          <span>Técnicas de Projeção</span>
-          <div className="techniques-layout">
-            <div className="techniques-list">
+          <div className="subTitleCategoryMobile">
+            <span>Técnicas de Projeção</span>
+          </div>
+          <div className="techniquesLayoutMobile">
+            <div className="techniquesListMobile">
               {nageWazaTechniques.map((technique, index) => (
                 <TechniqueCard
                   key={index}
@@ -86,16 +88,18 @@ const Techniques = () => {
           </div>
         </div>
 
-        <div className="category" aria-labelledby="katame-waza-title">
-          <div className="title-category">
+        <div className="categoryMobile" aria-labelledby="katame-waza-title">
+          <div className="titleCategoryMobile">
             <h2 id="katame-waza-title">KATAME-WAZA</h2>
-            <div className="japanese-title" aria-hidden="true">
+            <div className="japaneseTitleMobile" aria-hidden="true">
               <span>固め技</span>
             </div>
           </div>
-          <span>Técnicas de Solo</span>
-          <div className="techniques-layout">
-            <div className="techniques-list">
+          <div className="subTitleCategoryMobile">
+            <span>Técnicas de Solo</span>
+          </div>
+          <div className="techniquesLayoutMobile">
+            <div className="techniquesListMobile">
               {katameWazaTechniques.map((technique, index) => (
                 <TechniqueCard
                   key={index}

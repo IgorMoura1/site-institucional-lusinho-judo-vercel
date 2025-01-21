@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Typography } from '@mui/material';
-import Tecnicas from '../tecnicas';
+import Tecnicas from '../tecnicasMobile';
 import './styles.css';
 
 export default function TecnicaHero() {
@@ -14,18 +14,16 @@ export default function TecnicaHero() {
             <div className="image_hero_content">
                 <header className="text_techniques">
                     <Typography
-                        variant="h1"
+                        variant="h2"
                         id="techniques-hero-title"
-                        gutterBottom
-                        component="h1"
-                        sx={{ fontSize: '2rem', fontWeight: 'bold' }}
+                        sx={{ fontSize: '36px', fontWeight: 'bold' }}
                     >
                         TÉCNICAS DO JUDÔ
                     </Typography>
                     <Typography
                         variant="body1"
                         component="p"
-                        sx={{ fontSize: '1rem', color: 'text.secondary' }}
+                        sx={{ fontSize: '10px', color: 'text.secondary' }}
                     >
                         Podemos dividir as técnicas do judô em 2 grandes grupos:
                     </Typography>
