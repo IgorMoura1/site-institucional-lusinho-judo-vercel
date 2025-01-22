@@ -34,7 +34,8 @@
 
 .text_techniques h1 {
     font-family: var(--fonteWork);
-    font-size: var(--h1);
+    font-size: var(--h3);
+    color: var(--branco-texto);
 }
 
 .text_techniques span {
@@ -63,8 +64,10 @@
 }
 
 .text_techniques p {
-    margin-top: 0.5rem;
-    font-size: 1rem;
+    font-size: var(--bodyLarge);
+    font-weight: 500;
     color: #ffffff;
     font-family: var(--fonteWork);
+    flex-wrap: wrap;
+    width: 90%;
 }

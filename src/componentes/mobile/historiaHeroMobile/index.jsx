@@ -16,7 +16,7 @@ export default function historiaHero() {
                     aria-label="Imagem de fundo representando a história do judô"
                 >
                     <div className="textoHistoriaJudoMobile">
-                        <h1 id="historia-title">HISTORIA DO JUDO</h1>
+                        <h1 id="historia-title">HISTÓRIA DO JUDO</h1>
                         <p id="historia-description" className="sr-only">
                             Esta seção apresenta a criação e filosofia do judô, destacando seus princípios e impacto.
                         </p>
