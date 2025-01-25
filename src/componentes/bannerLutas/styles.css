@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.container_lutasHero {
+.containerLutasHeroMobile {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,8 +19,8 @@
     font-family: var(--fonteWork);
 }
 
-.imagem_hero_content {
-    padding: 0px 80px 80px;
+.imagemHeroContentMobile {
+    padding: 0px 20px 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -28,27 +28,26 @@
     gap: 40px;
 }
 
-.imagem_hero_content h1 {
+.imagemHeroContentMobile h1 {
     font-size: 4em;
     margin-bottom: 20px;
 }
 
-.imagem_hero_content p {
+.imagemHeroContentMobile p {
     margin: 10px 0;
-    text-align: start;
+    text-align: justify;
 }
 
-.principles {
+.principlesMobile {
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .principle {
     background-color: #000;
     margin: 10px;
-    border-radius: 5px;
     width: calc(50% - 20px);
     text-align: left;
     display: flex;
@@ -82,18 +81,17 @@
     width: 100px;
     height: 100px;
     object-fit: cover;
-    border-radius: 50%;
     margin-bottom: 10px;
 }
 
-.perfectPoint {
+.perfectPointMobile {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
 }
 
-.title_perfect_point {
+.titlePerfectPointMobile {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -102,24 +100,44 @@
     height: 150px;
 }
 
-.title_perfect_point h1 {
+.titlePerfectPointMobile h1 {
     position: absolute;
     z-index: 2;
+    font-size: var(--h3);
 }
 
-.japanese-letters-judo {
+.japaneseLettersJudoMobile {
     position: absolute;
     z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 130px;
+    font-size: var(--h1);
     font-weight: bold;
     color: transparent;
     -webkit-text-stroke: 0.5px rgb(255, 255, 255);
-    text-stroke: 2px black;
     z-index: 0;
     font-family: var(--fonteLato);
+}
+
+.judoScoreMobile{
+
+}
+
+.pointsMobile{
+
+}
+
+.iconsMobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.textPerfectPointMobile{
+
 }
 
 /* CARD ESSENCE */
@@ -132,7 +150,6 @@
     align-items: center;
     flex-direction: row;
     color: white;
-    border-radius: 8px 0px 0px 0px;
     border: 2px solid white;
     text-align: start;
 }
@@ -179,21 +196,20 @@
 .card_history{
     width: 250px;
     height: 250px;
-    border-radius: 12px 12px 0px 0px;
     color: white;
 }
 
 .text_card_history{
     padding: 10px;
-    font-size: var(--bodyMedium);
-    font-weight: 300;
+    font-size: var(--bodyLarge);
+    font-weight: 400;
     color: #000;
     background-color: #ffffff;
+    line-height: 1.4;
 }
 .card_top_image{
     display: flex;
     width: 100%;
     height: auto;
-    border-radius: 12px 12px 0px 0px;
     justify-content: center;
 }

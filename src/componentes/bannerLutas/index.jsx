@@ -27,16 +27,16 @@ const history = [
 
 export default function LutasHero() {
     return (
-        <div className="container_lutasHero">
-            <div className="imagem_hero_content">
-                <div className="perfectPoint">
-                    <div className="title_perfect_point">
+        <div className="containerLutasHeroMobile">
+            <div className="imagemHeroContentMobile">
+                <div className="perfectPointMobile">
+                    <div className="titlePerfectPointMobile">
                         <h1>LUTA PELO <br />PONTO PERFEITO</h1>
-                        <div className="japanese-letters-judo">
+                        <div className="japaneseLettersJudoMobile">
                             一本勝負
                         </div>
                     </div>
-                    <div className="text_perfect_point">
+                    <div className="textPerfectPointMobile">
                         <p>
                             Nas palavras de seu criador: "Arte em que se usa ao máximo a força física e espiritual".
                         </p>
@@ -48,7 +48,7 @@ export default function LutasHero() {
                         </p>
                     </div>
                 </div>
-                <div className="principles">
+                <div className="principlesMobile">
                     {essential.map((essential, index) => (
                         <CardEssence
                             key={index}
@@ -58,7 +58,7 @@ export default function LutasHero() {
                         />
                     ))}
                 </div>
-                <div className="judoScore">
+                <div className="judoScoreMobile">
                     <h2>PONTUAÇÃO NO JUDÔ</h2>
                     <p>
                         O principal objetivo do judô é derrubar o adversário para o chão. Os combates entre os judocas acontecem no tatame, que normalmente mede 8x8 metros. Para vencer a luta, o judoca precisa derrubar o adversário com as costas e ombros no tatame ou imobilizar o adversário durante um período que pode ir até 20 segundos.
@@ -66,7 +66,7 @@ export default function LutasHero() {
                     <p>
                         Atualmente, há dois tipos de golpes que pontuam no judô. Só o atleta completar dois pontos, ele vence a luta.
                     </p>
-                    <div className="points">
+                    <div className="pointsMobile">
                         <p>Wazari: quando o judoca cai de costas no tatame, porém com pouca velocidade. Cada 1 wazari ganha um ponto, ou seja, se o judoca ficar 2 wazari, ele vence a luta.</p>
                         <p>Ippon: quando o judoca cai perfeitamente de costas no tatame. Este golpe é considerado o "nocaute" do judô, pois o judoca ganha 2 pontos, vencendo a luta.</p>
                     </div>
@@ -74,7 +74,7 @@ export default function LutasHero() {
                         As lutas têm duração de 5 minutos. Durante esse período, o combate entre dois judocas deverá apresentar um vencedor. Entretanto, se isso não acontecer, há uma prorrogação, chamada de Golden Score (pontuação de ouro), ou seja, ganha o judoca que conseguir aplicar um golpe (pontuar) ou se o adversário é punido.
                     </p>
                 </div>
-                <div className="icons">
+                <div className="iconsMobile">
                     {history.map((history, index) => (
                         <CardHistory
                             key={index}
