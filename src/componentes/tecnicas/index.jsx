@@ -48,16 +48,16 @@ const Techniques = () => {
   const katameWazaTechniques = [
     { name: 'Kesa-Gatame', imageSrc: kesaGatameImg, japaneseLetters: '袈裟固' },
     { name: 'Kata-Gatame', imageSrc: kataGatameImg, japaneseLetters: '肩固' },
-    { name: 'Kuzure-Shiho-Gatame', imageSrc: kuzureKamiShihoGatameImg, japaneseLetters: '三角固' },
-    { name: 'Tate-Shiho-Gatame', imageSrc: tateShihoGatameImg, japaneseLetters: '縦四方固' },
+    { name: 'Kuzure-Shiho', imageSrc: kuzureKamiShihoGatameImg, japaneseLetters: '三角固' },
+    { name: 'Tate-Shiho', imageSrc: tateShihoGatameImg, japaneseLetters: '縦四方固' },
     { name: 'Do-Jime', imageSrc: doJimeImg, japaneseLetters: '胴絞' },
     { name: 'Gyak-Joji-Jime', imageSrc: gyakuJujiJimeImg, japaneseLetters: '逆十字絞' },
     { name: 'Ryo-Te-Jime', imageSrc: ryoTeJimeImg, japaneseLetters: '両手絞' },
     { name: 'Tsukkomi-Jime', imageSrc: tsukkomiJimeImg, japaneseLetters: '突込絞' },
     { name: 'Ashi-Garami', imageSrc: ashiGaramiImg, japaneseLetters: '足緘' },
     { name: 'Ude-Garami', imageSrc: udeGaramiImg, japaneseLetters: '腕緘' },
-    { name: 'Ude-Hishigi-Sankaku-Gatame', imageSrc: udeHishigiSankakuGatameImg, japaneseLetters: '腕挫三角固' },
-    { name: 'Ude-Hishigi-Waki-Gatame', imageSrc: udeHishigiWakiGatameImg, japaneseLetters: '腕挫腋固' },
+    { name: 'Sankaku-Gatame', imageSrc: udeHishigiSankakuGatameImg, japaneseLetters: '腕挫三角固' },
+    { name: 'Waki-Gatame', imageSrc: udeHishigiWakiGatameImg, japaneseLetters: '腕挫腋固' },
   ];
 
   return (

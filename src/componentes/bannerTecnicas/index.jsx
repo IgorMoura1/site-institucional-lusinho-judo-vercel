@@ -13,22 +13,8 @@ export default function TecnicaHero() {
         >
             <div className="image_hero_content">
                 <header className="text_techniques">
-                    <Typography
-                        variant="h1"
-                        id="techniques-hero-title"
-                        gutterBottom
-                        component="h1"
-                        sx={{ fontSize: '2rem', fontWeight: 'bold' }}
-                    >
-                        TÉCNICAS DO JUDÔ
-                    </Typography>
-                    <Typography
-                        variant="body1"
-                        component="p"
-                        sx={{ fontSize: '1rem', color: 'text.secondary' }}
-                    >
-                        Podemos dividir as técnicas do judô em 2 grandes grupos:
-                    </Typography>
+                    <h1>TÉCNICAS DO JUDÔ</h1>
+                    <p>Podemos dividir as técnicas do judô em 2 grandes grupos:</p>
                 </header>
             </div>
             <section aria-labelledby="techniques-section-title">

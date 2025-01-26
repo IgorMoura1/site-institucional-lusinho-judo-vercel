@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.containerLutasHero {
+.containerLutasHeroMobile {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,32 +19,30 @@
     font-family: var(--fonteWork);
 }
 
-.imagemHeroContent {
+.imagemHeroContentMobile {
     padding: 0px 20px 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 40px;
-    align-items: center;
 }
 
-.imagemHeroContent h1 {
+.imagemHeroContentMobile h1 {
     font-size: 4em;
     margin-bottom: 20px;
 }
 
-.imagemHeroContent p {
+.imagemHeroContentMobile p {
     margin: 10px 0;
     text-align: justify;
 }
 
-.principles {
+.principlesMobile {
     display: flex;
-    gap: 115px;
+    gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
-    width: 85%;
 }
 
 .principle {
@@ -86,15 +84,14 @@
     margin-bottom: 10px;
 }
 
-.perfectPoint {
+.perfectPointMobile {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    width: 100%;
 }
 
-.titlePerfectPoint {
+.titlePerfectPointMobile {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,13 +100,13 @@
     height: 150px;
 }
 
-.titlePerfectPoint h1 {
+.titlePerfectPointMobile h1 {
     position: absolute;
     z-index: 2;
     font-size: var(--h3);
 }
 
-.japaneseLettersJudo {
+.japaneseLettersJudoMobile {
     position: absolute;
     z-index: 1;
     display: flex;
@@ -123,35 +120,30 @@
     font-family: var(--fonteLato);
 }
 
-.judoScore{
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    flex-direction: column;
-    width: 80%;
-}
-
-.points{
+.judoScoreMobile{
 
 }
 
-.icons{
+.pointsMobile{
+
+}
+
+.iconsMobile{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     gap: 20px;
-    width: 80%;
 }
 
-.textPerfectPoint{
-    width: 80%;
+.textPerfectPointMobile{
+
 }
 
 /* CARD ESSENCE */
 
 .card_essence {
-    width: 300px;
+    width: 289px;
     height: 74px;
     display: flex;
     justify-content: center;

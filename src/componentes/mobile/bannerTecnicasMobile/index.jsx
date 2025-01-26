@@ -12,7 +12,7 @@ export default function TecnicaHero() {
             aria-labelledby="techniques-hero-title"
         >
             <div className="image_hero_content">
-                <div className="text_techniques">
+                <div className="text_techniquesMobile">
                     <h1>TÉCNICAS DO JUDÔ</h1>
                     <p>Podemos dividir as técnicas do judô em 2 grandes grupos:</p>
                 </div>

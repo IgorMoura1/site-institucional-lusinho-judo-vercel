@@ -7,26 +7,29 @@
 
 .techniques-wrapper {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: auto;
 }
 
 .category {
+    display: flex;
     flex: 1;
+    flex-wrap: wrap;
     max-width: auto;
     position: relative;
-    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
 }
 
-
-
 .category h2 {
-    font-size: var(--h2);
+    font-size: var(--h1);
     font-family: var(--fonteWork);
+}
+
+.category span {
+    font-size: var(--bodyLarge);
+    font-family: var(--fonteWork);
+    font-weight: 200;
 }
 
 .title-category {
@@ -66,16 +69,17 @@
 
 .techniques-layout {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
 }
 
 .techniques-list {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    width: 460px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70%;
+    height: 100%;
 }
 
 .technique-card {
@@ -83,19 +87,19 @@
     flex-direction: column;
     align-items: center;
     margin: 10px;
-    width: calc(25% - 20px);
+    width: auto;
     font-family: var(--fonteWork);
     position: relative;
     box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
 .japanese-letters {
     position: absolute;
-    font-size: 30px;
+    font-size: var(--h3);
     font-weight: bold;
     color: transparent;
     -webkit-text-stroke: 0.5px rgb(255, 255, 255);
-    text-stroke: 2px black;
     z-index: 0;
     font-family: var(--fonteLato);
     
@@ -113,16 +117,21 @@
     text-align: center;
     margin-top: 5px;
     font-family: var(--fonteWork);
-    font-size: 10px;
-    font-weight: 200;
-    
+    font-size: var(--bodyMedium);
+    font-weight: 300;
 }
 
 .heroCardTechnique {
-    width: 100px;
-    height: 75px;
+    width: 130px;
+    height: 130px;
     display: flex;
     justify-content: center;
+}
+
+.heroCardTechnique img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
 }
 
 .japanese-title span {
@@ -130,7 +139,6 @@
     font-weight: bold;
     color: transparent;
     -webkit-text-stroke: 0.5px rgb(255, 255, 255);
-    text-stroke: 2px black;
     opacity: 0.5;
 }
 
