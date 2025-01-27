@@ -6,7 +6,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 export default function Footer() {
     return (
-            <div className="container_footer"
+            <div className="containerFooterMobile"
                 role="contentinfo"
                 aria-label="Rodapé do site"
             >
@@ -26,7 +26,7 @@ export default function Footer() {
                             <h3 id="map-title">Mapa do site</h3>
                         </div>
                         <div
-                            className="container_info"
+                            className="containerInfoMobile"
                             role="navigation"
                             aria-labelledby="map-title"
                         >
@@ -42,7 +42,7 @@ export default function Footer() {
                             <h3 id="partners-title">Parceiros</h3>
                         </div>
                         <div
-                            className="container_info"
+                            className="containerInfoMobile"
                             role="list"
                             aria-labelledby="partners-title"
                         >

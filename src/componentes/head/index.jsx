@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import "./styles.css";
-import Logo from "./assets/logo.svg";
-import { useNavigate } from "react-router-dom";
+import Logo from "./assets/logo.png";
+import { useNavigate, Link } from "react-router-dom";
 
 export default function Header() {
     useEffect(() => {
-        const header = document.querySelector(".header");
+        const header = document.querySelector(".headerDesktop");
         let lastScrollY = window.scrollY;
 
         const handleScroll = () => {
@@ -34,7 +34,7 @@ export default function Header() {
     const navigate = useNavigate();
 
     return (
-        <header className="header top" role="banner">
+        <header className="headerDesktop top" role="banner">
             <div className="logo">
                 <img src={Logo} alt="Logo do Instituto de Judô" />
             </div>
@@ -43,9 +43,9 @@ export default function Header() {
                 role="navigation"
                 aria-label="Menu principal"
             >
-                <a href="#" onClick={() => navigate("/")} aria-label="Sobre o Instituto">O Instituto</a>
-                <a href="#" onClick={() => navigate("/historia-judo")} aria-label="História do Judô">História</a>
-                <a href="#" onClick={() => navigate("/seja-parceiro")} aria-label="Fale conosco">Fale Conosco</a>
+                <Link to="/" aria-label="Sobre o Instituto">O Instituto</Link>
+                <Link to="/historia-judo" aria-label="História do Judô">História</Link>
+                <Link to="/seja-parceiro" aria-label="Fale conosco">Fale Conosco</Link>
             </nav>
         </header>
     );
