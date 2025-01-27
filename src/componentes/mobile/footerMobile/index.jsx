@@ -1,5 +1,5 @@
 import "./styles.css";
-import Logo from "./assets/logo.svg";
+import Logo from "./assets/logo.png";
 import { Container } from "@mui/material";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';

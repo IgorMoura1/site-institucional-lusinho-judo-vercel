@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
-import Logo from "../headerMobile/assets/logo.svg";
+import Logo from "../headerMobile/assets/logo.png";
 import { useNavigate } from "react-router-dom";
 import './styles.css';
 
