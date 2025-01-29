@@ -9,10 +9,10 @@ import './styles.css';
 export default function ContactComponent() {
   const [formData, setFormData] = useState({
     firstName: "",
-    lastName: "Andrade",
+    lastName: "",
     email: "",
-    phone: "11 123456789",
-    reason: "Desejo ser parceiro",
+    phone: "",
+    reason: "",
     message: "",
   });
 
@@ -33,7 +33,7 @@ export default function ContactComponent() {
           <form className="form" onSubmit={handleSubmit}>
             <h1 className="form-title">ENTRE EM CONTATO</h1>
             <div className="grid-container">
-              <div>
+              <div className="grid-item">
                 <label htmlFor="firstName" className="label">
                   Nome
                 </label>
@@ -47,7 +47,7 @@ export default function ContactComponent() {
                   placeholder=""
                 />
               </div>
-              <div>
+              <div className="grid-item">
                 <label htmlFor="lastName" className="label">
                   Sobrenome
                 </label>
@@ -57,11 +57,10 @@ export default function ContactComponent() {
                   name="lastName"
                   value={formData.lastName}
                   onChange={handleChange}
-                  disabled
-                  className="input disabled"
+                  className="input"
                 />
               </div>
-              <div>
+              <div className="grid-item">
                 <label htmlFor="email" className="label">
                   Email
                 </label>
@@ -75,9 +74,9 @@ export default function ContactComponent() {
                   placeholder=""
                 />
               </div>
-              <div>
+              <div className="grid-item">
                 <label htmlFor="phone" className="label">
-                  Telephone
+                  Telefone
                 </label>
                 <input
                   type="text"
