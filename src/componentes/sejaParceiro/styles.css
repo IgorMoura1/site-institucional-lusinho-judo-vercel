@@ -35,6 +35,7 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: #f5f5f5;
+    min-height: 100vh;
 }
 
 
@@ -65,11 +66,11 @@ body {
     justify-content: center;
     width: 50%;
     height: 100%;
-    font-family: var(--fonte);
+    font-family: var(--fontePoppins);
 }
 
 .parceiroPageLeftSideDesktop h1 {
-    font-family: var(--fonte);
+    font-family: var(--fontePoppins);
     font-size: 2.5rem;
     font-weight: 500;
     color: var(--cor-primaria);
@@ -77,7 +78,7 @@ body {
 }
 
 .parceiroPageLeftSideDesktop p {
-    font-family: var(--fonte);
+    font-family: var(--fontePoppins);
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--cor-primaria);

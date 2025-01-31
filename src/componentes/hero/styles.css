@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--fonte);
+    font-family: var(--fontePoppins);
 }
 
 .container_hero {
@@ -32,7 +32,7 @@
     height: 40px;
     border-radius: 5px;
     background-color: var(--vermelho);
-    font-family: var(--fonteWork);
+    font-family: var(--fontePoppins);
     font-size: 20px;
     color: var(--branco-texto);
     bottom: 100px;

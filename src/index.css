@@ -19,7 +19,7 @@
 
     --fonteLato: "Lato", sans-serif;
     --fonteWork: "Work Sans", sans-serif;
-    --fonte: "Poppins", sans-serif;
+    --fontePoppins: "Poppins", serif;
 
     /* tamanho das fontes */
     --heading: 90px;
@@ -48,10 +48,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--fonte);
+    font-family: var(--fontePoppins);
 }
 
 body {
     background-color: #FFFFFF;
-    font-family: var(--fonte);
+    font-family: var(--fontePoppins);
 }

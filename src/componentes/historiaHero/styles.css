@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--fonteWork);
+    font-family: var(--fontePoppins);
 }
 
 .container_historiaHero {
@@ -21,39 +21,36 @@
     width: 100%;
     height: auto;
     min-height: 100vh;
-    padding-top: 110px;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
 }
 
 .texto_historia_judo {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    font-family: var(--fonteWork);
+    font-family: var(--fontePoppins);
     color: var(--branco-texto);
-    margin: auto;
-    padding: 2%;
-    gap: 40px;
-    max-width: 1200px;
-    word-wrap: break-word;
     overflow-wrap: anywhere;
+    width: 80%;
 }
 
 .texto_historia_judo h1 {
-    font-family: var(--fonteWork);
+    font-family: var(--fontePoppins);
     color: var(--branco-texto);
-    font-size: clamp(2rem, 5vw, 4rem);
+    font-size: var(--h1)
 
 }
 
 .texto_paragrafo h4{
-    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-size: var(--h4);
     font-weight: 400;
 }
 
 .texto_paragrafo span {
     font-size: var(--h5);
-    font-weight: 300;
+    font-weight: 200;
     line-height: 1.1;
 }
 
