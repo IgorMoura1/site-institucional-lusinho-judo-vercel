@@ -42,9 +42,10 @@ html {
     gap: 20px;
 }
 
-.info {
+.infoMobile {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 20px;
     text-decoration: none;
@@ -64,6 +65,10 @@ html {
 .title-footer {
     font-size: 1.2rem;
     font-weight: bold;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .containerInfoMobile a {
@@ -72,11 +77,11 @@ html {
 }
 
 .containerInfoMobile a:hover {
-    color: var(--vermelho-claro);
-    font-size: var(--bodyLarge);
-    scale: 1.1 0.8 ease;
-    border-bottom: 2px solid white;
-    transition: border-color 0.7 ease;
+    color: var(--cinza);
+}
+
+.container_infoMobile a:active{
+    color: var(--cinza);
 }
 
 @media (min-width: 768px) {
@@ -114,4 +119,14 @@ html {
     .title-footer {
         font-size: 20px;
     }
+}
+
+.container_infoMobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 0.9rem;
 }

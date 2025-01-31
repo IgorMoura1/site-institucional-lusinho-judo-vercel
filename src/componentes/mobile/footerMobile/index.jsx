@@ -21,7 +21,7 @@ export default function Footer() {
                 </div>
 
                 <div className="rightSection_footer">
-                    <div className="info">
+                    <div className="infoMobile">
                         <div className="title-footer">
                             <h3 id="map-title">Mapa do site</h3>
                         </div>
@@ -37,7 +37,7 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    <div className="info">
+                    <div className="infoMobile">
                         <div className="title-footer">
                             <h3 id="partners-title">Parceiros</h3>
                         </div>
@@ -52,12 +52,12 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    <div className="info">
+                    <div className="infoMobile">
                         <div className="title-footer">
                             <h3 id="social-title">Redes Sociais</h3>
                         </div>
                         <div
-                            className="container_info"
+                            className="container_infoMobile"
                             role="list"
                             aria-labelledby="social-title"
                         >

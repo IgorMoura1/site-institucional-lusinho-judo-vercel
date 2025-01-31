@@ -53,7 +53,7 @@
     font-size: 22px;
     position: relative;
     transition: color 0.3s ease, transform 0.3s ease;
-    font-family: var(--fonteWork);
+    font-family: var(--fontePoppins);
     cursor: pointer;
 }
 

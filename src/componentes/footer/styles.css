@@ -10,7 +10,6 @@ html {
     flex-direction: row;
     align-items: center;
     color: var(--branco-texto);
-    font-family: var(--fonteWork);
     background-color: #3C0F12;
     width: 100vw; 
     position: relative;
@@ -42,6 +41,7 @@ html {
 }
 
 .leftSection_footerDesktop p {
+    font-family: var(--fontePoppins);
     font-size: var(--h3);
     font-weight: 200;
 
@@ -67,7 +67,8 @@ html {
     gap: 15px;
     text-decoration: none;
     list-style: none;
-    font-size: 12px;
+    text-align: start;
+    font-size: var(--bodyMedium);
     width: 100%;
 }
 
@@ -79,17 +80,16 @@ html {
 }
 
 .containerInfoDesktop a {
+    font-family: var(--fontePoppins);
     text-decoration: none;
     color: inherit;
     text-align: start;
-
+    font-size: var(--bodyMedium);
+    font-weight: var(--extraLight);
 }
 
 .containerInfoDesktop a:hover {
-    color: var(--vermelho-claro);
-    font-size: var(--bodyLarge);
-    border-bottom: 2px solid white;
-    transition: border-color 0.7 ease;
+    color: var(--cinza);
 }
 
 .logoFooterBackground {
@@ -113,13 +113,17 @@ html {
 
 .socialIcons{
     display: flex;
-    gap: 20px;
     justify-content: start;
     align-items: center;
-    
+    font-size: var(--bodyLarge);
+}
+.listitem span {
+    font-family: var(--fontePoppins);
+    font-size: var(--bodySmall);
 }
 
 .socialIcons span {
     justify-content: start;
-    
+    font-family: var(--fontePoppins);
+    font-size: var(--bodySmall);
 }

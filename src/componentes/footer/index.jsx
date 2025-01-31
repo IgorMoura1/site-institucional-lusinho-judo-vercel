@@ -50,9 +50,9 @@ export default function Footer() {
                         role="list"
                         aria-labelledby="partners-title"
                     >
-                        <span role="listitem">Instituto Life</span>
-                        <span role="listitem">Associação Shiroma de Judô</span>
-                        <span role="listitem">CE Tiradentes</span>
+                        <a>Instituto Life</a>
+                        <a>Associação Shiroma de Judô</a>
+                        <a>CE Tiradentes</a>
                     </div>
                 </div>
 
