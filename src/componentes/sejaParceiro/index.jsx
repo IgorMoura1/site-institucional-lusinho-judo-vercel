@@ -124,7 +124,11 @@ export default function ContactComponent() {
                 className="textarea"
                 rows="4"
                 placeholder="Escreva sua mensagem"
+                maxLength="255"
               ></textarea>
+              <div className="char-counter">
+                {formData.message.length}/255
+              </div>
             </div>
 
             <button type="submit" className="submit-button">
