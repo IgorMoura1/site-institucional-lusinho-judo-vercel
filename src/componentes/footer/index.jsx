@@ -3,8 +3,11 @@ import Logo from "./assets/logo.png";
 import { Container } from "@mui/material";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import { useNavigate } from 'react-router-dom';
 
 export default function Footer() {
+    const navigate = useNavigate();
+    
     return (
         <div
             className="container_footer"
@@ -26,7 +29,7 @@ export default function Footer() {
 
             <div className="rightSectionFooterDesktop">
                 <div className="info">
-                    <div className="title-footer">
+                    <div className="title-footerDesktop">
                         <h3 id="map-title">Mapa do site</h3>
                     </div>
                     <div
@@ -34,15 +37,20 @@ export default function Footer() {
                         role="navigation"
                         aria-labelledby="map-title"
                     >
-                        <a href="#" aria-label="Ir para a página inicial">Home</a>
-                        <a href="/historia-judo" aria-label="Ir para a página do Instituto">Instituto</a>
-                        <a href="/historia-hero" aria-label="Ir para a página da História do Judô">História do Judô</a>
-                        <a href="/seja-parceiro" aria-label="Ir para a página de Fale Conosco">Fale Conosco</a>
+                        <p onClick={() => navigate("/")} aria-label="Ir para a página do Instituto">
+                            Instituto
+                        </p>
+                        <p onClick={() => navigate("/historia-judo")} aria-label="Ir para a página da História do Judô">
+                            História do Judô
+                        </p>
+                        <p onClick={() => navigate("/seja-parceiro")} aria-label="Ir para a página de Fale Conosco">
+                            Fale Conosco
+                        </p>
                     </div>
                 </div>
 
                 <div className="info">
-                    <div className="title-footer">
+                    <div className="title-footerDesktop">
                         <h3 id="partners-title">Parceiros</h3>
                     </div>
                     <div
@@ -57,7 +65,7 @@ export default function Footer() {
                 </div>
 
                 <div className="info">
-                    <div className="title-footer">
+                    <div className="title-footerDesktop">
                         <h3 id="social-title">Redes Sociais</h3>
                     </div>
                     <div
@@ -75,17 +83,17 @@ export default function Footer() {
                             </span>
                         </div>
                         <div className="socialIcons">
-                        <span role="listitem">
-                            <WhatsAppIcon
-                                sx={{ marginRight: '8px', verticalAlign: 'middle' }}
-                                aria-label="WhatsApp"
-                            />
-                            (11) 991473505
-                        </span>
+                            <span role="listitem">
+                                <WhatsAppIcon
+                                    sx={{ marginRight: '8px', verticalAlign: 'middle' }}
+                                    aria-label="WhatsApp"
+                                />
+                                (11) 991473505
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-            </div >
+        </div >
     );
 }

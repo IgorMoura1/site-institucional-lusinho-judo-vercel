@@ -71,16 +71,16 @@ html {
     display: flex;
 }
 
-.containerInfoMobile a {
+.containerInfoMobile p {
     text-decoration: none;
     color: inherit;
 }
 
-.containerInfoMobile a:hover {
+.containerInfoMobile p:hover {
     color: var(--cinza);
 }
 
-.container_infoMobile a:active{
+.container_infoMobile p:active{
     color: var(--cinza);
 }
 
