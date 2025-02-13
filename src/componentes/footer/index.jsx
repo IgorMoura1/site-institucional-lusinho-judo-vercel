@@ -15,12 +15,13 @@ export default function Footer() {
             aria-label="Rodapé do site"
         >
             <div className="logoFooterBackground">
-                <img src={Logo} alt="" />
+                <img src={Logo} alt="" loading="lazy"/>
             </div>
             <div className="leftSection_footerDesktop">
                 <img
                     src={Logo}
                     alt="Logo do Instituto Luisinho Judô"
+                    loading="lazy"
                 />
                 <div className="text">
                     <p>INSTITUTO LUISINHO JUDO</p>

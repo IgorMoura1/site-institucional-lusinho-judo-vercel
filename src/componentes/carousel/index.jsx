@@ -39,7 +39,7 @@ const Carousel = () => {
                     <div key={index} className={`carousel-item ${index === activeIndex ? 'active' : 'sideActive'}`}>
                         <div className="carousel-item-wrapper">
                             <h2>{item.title}</h2>
-                            <img src={item.image} alt={item.title} className="carousel-image" />
+                            <img src={item.image} alt={item.title} className="carousel-image" loading="lazy"/>
                             <p>{item.description}</p>
                         </div>
                     </div>

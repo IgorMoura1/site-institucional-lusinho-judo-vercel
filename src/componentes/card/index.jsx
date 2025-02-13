@@ -12,7 +12,7 @@ export default function Card({ name, description, photo, appearance }) {
             <div className="card-back"></div> {/* Empty div for the background */}
             <div className="card-content">
                 <div className="card-photo" role="img" aria-label={`Foto do professor ${name}, ${appearance}`}>
-                    <img src={photo} alt={`Professor ${name}, ${appearance}`} />
+                    <img src={photo} alt={`Professor ${name}, ${appearance}`} loading="lazy"/>
                 </div>
                 <p id={`card-title-${name}`} className="card-title">
                     {name}

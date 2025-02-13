@@ -138,7 +138,7 @@ export default function ContactComponent() {
         </div>
       </div>
       <div className="parceiroPageRightSideDesktop">
-        <img src={heroImageParceiro} alt="" />
+        <img src={heroImageParceiro} alt="" loading="lazy"/>
       </div>
     </div>
   );

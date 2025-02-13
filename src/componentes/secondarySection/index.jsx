@@ -16,12 +16,12 @@ export default function SecondarySection() {
                     <p>Além do renomado Sensei Luisinho, o instituto conta com uma equipe dedicada formada por mais 5 professores e 2 monitores, que juntos garantem a qualidade e o cuidado nas práticas e no desenvolvimento dos alunos. O Instituto Sensei Luisinho não é apenas um lugar para aprender judô, mas um verdadeiro pilar na comunidade, incentivando valores como respeito, perseverança e espírito de equipe. Venha conhecer, praticar e se inspirar! 🥋.</p>
                 </div>
                 <div className="images-secondary">
-                    <img src={fotoInstituto1} alt="Crianças praticando Judô num tatami azul, na instituição Luisinho Judo" />
-                    <img src={fotoInstituto2} alt="Alunos e convidados posam para uma foto na instituição Luisinho Judo" />
+                    <img src={fotoInstituto1} alt="Crianças praticando Judô num tatami azul, na instituição Luisinho Judo" loading="lazy"/>
+                    <img src={fotoInstituto2} alt="Alunos e convidados posam para uma foto na instituição Luisinho Judo" loading="lazy"/>
                 </div>
             </div>
             <div className="hero">
-                <img src={HeroImage} alt="Logo da Instituição Luisinho" />
+                <img src={HeroImage} alt="Logo da Instituição Luisinho" loading="lazy"/>
             </div>
         </div>
     )
